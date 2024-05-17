@@ -84,5 +84,6 @@ button:hover {
 }
 
 #b_x {
+    display: inline-block;
     border: .5px solid black;
 }
