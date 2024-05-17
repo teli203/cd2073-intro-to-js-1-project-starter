@@ -85,5 +85,7 @@ button:hover {
 
 #b_x {
     display: inline-block;
+    padding: 1.7rem;
+    margin: .9rem;
     border: .5px solid black;
 }
