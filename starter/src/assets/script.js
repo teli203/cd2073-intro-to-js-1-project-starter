@@ -40,6 +40,19 @@ const products = [
 /* Declare an empty array named cart to hold the items in the cart */
 const cart = [];
 
+/* Currency conversion rates relative to USD */
+/* #COME BACK# 
+const conversionRates = {
+  USD: 1,
+  EUR: 0.85,
+  GBP: 0.75,
+};
+
+/* Create a function to convert currency */
+/* #COME BACK#
+function convertCurrency(amount, currency) {
+  return amount * conversionRates[currency];
+} */
 
 /* Create a function named addProductToCart that takes in the product productId as an argument
   - addProductToCart should get the correct product based on the productId
@@ -112,6 +125,14 @@ function cartTotal() {
   return cart.reduce((total, product) => total + (product.price * product.quantity), 0);
 }
 
+/* Create a function to update the cart total displayed in the selected currency */
+/* #COME BACK# function updateCartTotal() {
+  const currency = document.getElementById('currency').value;
+  const totalInUSD = cartTotal();
+  const convertedTotal = convertCurrency(totalInUSD, currency);
+  document.querySelector('.cart-total').innerText = `Cart Total: ${convertedTotal.toFixed(2)} ${currency}`;
+} */
+
 
 /* Create a function called emptyCart that empties the products from the cart */
 function emptyCart() {
@@ -150,6 +171,5 @@ module.exports = {
    cartTotal,
    pay, 
    emptyCart,
-   /* Uncomment the following line if completing the currency converter bonus */
-   // currency
+   /* convertCurrency */
 }
