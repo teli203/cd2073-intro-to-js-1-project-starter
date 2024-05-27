@@ -22,6 +22,13 @@
     productId: 2,
     image: "./images/strawberry.jpg"
   },
+  {
+    name: "Bag of Oranges",
+    price: 10,
+    quantity: 0,
+    productId: 3,
+    image: "./images/orange.jpg"
+  },
 ];
 
 /* Images provided in /images folder. All images from Unsplash.com
