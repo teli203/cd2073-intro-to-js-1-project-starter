@@ -15,6 +15,13 @@
     productId: 1,
     image: "./images/cherry.jpg"
   },
+  {
+    name: "Carton of Strawberries",
+    price: 5,
+    quantity: 0,
+    productId: 2,
+    image: "./images/strawberry.jpg"
+  },
 ];
 
 /* Images provided in /images folder. All images from Unsplash.com
