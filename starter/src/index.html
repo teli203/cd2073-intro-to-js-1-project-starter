@@ -15,41 +15,24 @@
 <body>
     <div class="shopping-cart">
         <h1>Kirana's Fruit Stand</h1>
-        <div class="currency-selector"></div>
+        <div class="currency-selector">
+                <label for="currency">Choose a currency:</label>
+                <select id="currency" onchange="updateCartTotal()">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                </select>
+        </div>
         <div class="cart-container">
             <div class="products-container">
                 <h2>Products</h2>
-                <div class="products">
-                    <div class="product-100">
-                    <img src="images/cherry.jpg" alt="Image of Cherry">
-                    <h3>Carton of Cherries</h3>
-                    <p>price: $4</p>
-                    <button>ADD TO CART</button> 
-                    </div>
-                    <div class="product-105">
-                    <img src="images/strawberry.jpg" alt="Image of Strawberry">
-                    <h3>Carton of Strawberries</h3>
-                    <p>price: $5</p>
-                    <button>ADD TO CART</button>
-                    </div>
-                    <div class="product-110">
-                    <img src="images/orange.jpg" alt="Image of Orange">
-                    <h3>Bag of Oranges</h3>
-                    <p>price: $10</p>
-                    <button>ADD TO CART</button>
-                    </div>   
-                </div>
-            
+                <div class="products"></div>
                 <h2>Your Shopping Cart</h2>
-
                 <div class="empty-btn"></div>
                 <div class="cart"></div>
             </div>
-
-
             <div class="checkout-container">
                 <h2>Checkout</h2>
-                <p>Cart Total: $37</p>
                 <div class="checkout">
                     <div class="cart-total"></div>
                     <form>
@@ -58,18 +41,10 @@
                         <button class="pay">Submit</button> 
                     </form>
                     <h3>Receipt</h3>
-                    <div class="pay-summary">
-                        <p>Cash Received: $25</p>
-                        <p>Remaining Balance: -$12</p>
-                        <p>Please Pay Additional Amount</p>
-                        <hr>
-                        <p>Cash Received: $12</p>
-                        <p>Cash Returned: $0</p>
-                        <p>Thank You!</p>
-                    </div>
+                    <div class="pay-summary"></div>
                 </div>
             </div>
         </div>
-    </div>
+    </div>  
 </body>
 </html>
