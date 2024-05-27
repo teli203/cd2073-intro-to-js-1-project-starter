@@ -1,5 +1,4 @@
 /* Create an array named products which you will use to add all of your product object literals that you create in the next step. */
-
 /* Create 3 or more product objects using object literal notation 
    Each product should include five properties
    - name: name of product (string)
@@ -7,7 +6,8 @@
    - quantity: quantity in cart should start at zero (number)
    - productId: unique id for the product (number)
    - image: picture of product (url string)
-*/ const products = [
+*/ 
+const products = [
   {
     name: "Carton of Cherries",
     price: 4,
@@ -126,6 +126,10 @@ function emptyCart() {
   - pay will return a positive number if money should be returned to customer
   Hint: cartTotal function gives us cost of all the products in the cart  
 */
+function pay(amount) {
+  const total = cartTotal();
+  return amount - total;
+}
 
 /* Place stand out suggestions here (stand out suggestions can be found at the bottom of the project rubric.)*/
 
