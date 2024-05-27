@@ -114,6 +114,11 @@ function cartTotal() {
 
 
 /* Create a function called emptyCart that empties the products from the cart */
+function emptyCart() {
+  cart.length = 0;
+  products.forEach(product => product.quantity = 0);
+}
+
 
 /* Create a function named pay that takes in an amount as an argument
   - amount is the money paid by customer
