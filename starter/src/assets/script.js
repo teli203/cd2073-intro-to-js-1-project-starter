@@ -7,7 +7,15 @@
    - quantity: quantity in cart should start at zero (number)
    - productId: unique id for the product (number)
    - image: picture of product (url string)
-*/ const products = [];
+*/ const products = [
+  {
+    name: "Carton of Cherries",
+    price: 4,
+    quantity: 0,
+    productId: 1,
+    image: "./images/cherry.jpg"
+  },
+];
 
 /* Images provided in /images folder. All images from Unsplash.com
    - cherry.jpg by Mae Mu
