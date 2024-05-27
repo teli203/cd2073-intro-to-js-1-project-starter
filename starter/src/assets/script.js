@@ -92,6 +92,16 @@ function decreaseQuantity(productId) {
   - removeProductFromCart should update the product quantity to 0
   - removeProductFromCart should remove the product from the cart
 */
+function removeProductFromCart(productId) {
+  const product = products.find(prod => prod.productId === productId);
+  if (product) {
+    product.quantity = 0;
+    const index = cart.findIndex(item => item.productId === productId);
+    if (index !== -1) {
+      cart.splice(index, 1);
+    }
+  }
+}
 
 /* Create a function named cartTotal that has no parameters
   - cartTotal should iterate through the cart to get the total cost of all products
