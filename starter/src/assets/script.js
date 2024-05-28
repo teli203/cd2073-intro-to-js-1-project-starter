@@ -40,6 +40,9 @@ const products = [
 /* Declare an empty array named cart to hold the items in the cart */
 const cart = [];
 
+/* Declare a variable to track the total amount paid by the customer */
+let totalPaid = 0;
+
 /* Currency conversion rates relative to USD */
 /* #COME BACK# 
 const conversionRates = {
@@ -138,6 +141,7 @@ function cartTotal() {
 function emptyCart() {
   cart.length = 0;
   products.forEach(product => product.quantity = 0);
+  totalPaid = 0;
 }
 
 
@@ -148,8 +152,9 @@ function emptyCart() {
   Hint: cartTotal function gives us cost of all the products in the cart  
 */
 function pay(amount) {
+  totalPaid += amount;
   const total = cartTotal();
-  return amount - total;
+  return totalPaid - total;
 }
 
 /* Place stand out suggestions here (stand out suggestions can be found at the bottom of the project rubric.)*/
