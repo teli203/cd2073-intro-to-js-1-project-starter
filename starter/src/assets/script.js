@@ -158,7 +158,7 @@ function clearCartAndTotal() {
 function pay(amount) {
   totalPaid += amount;
   const total = cartTotal();
-/*  return totalPaid - total; */
+
 
   if (totalPaid >= total) {
      const change = totalPaid - total;
