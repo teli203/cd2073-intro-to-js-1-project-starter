@@ -144,6 +144,10 @@ function emptyCart() {
   totalPaid = 0;
 }
 
+/* Create a function to clear out the cart and reset the totalPaid */
+function clearCartAndTotal() {
+  emptyCart();
+}
 
 /* Create a function named pay that takes in an amount as an argument
   - amount is the money paid by customer
@@ -154,7 +158,15 @@ function emptyCart() {
 function pay(amount) {
   totalPaid += amount;
   const total = cartTotal();
-  return totalPaid - total;
+/*  return totalPaid - total; */
+
+  if (totalPaid >= total) {
+     const change = totalPaid - total;
+     clearCartAndTotal();
+      return change;
+  } else {
+    return totalPaid - total;
+  }
 }
 
 /* Place stand out suggestions here (stand out suggestions can be found at the bottom of the project rubric.)*/
