@@ -1,8 +1,11 @@
-# Shopping Cart Functionality
+<img width="1438" alt="Screenshot 2024-06-20 at 1 46 00 AM" src="https://github.com/teli203/weather-app/assets/68035449/1471176d-f65f-4528-aa94-70da6b99316f">
 
-I created the core functionality used for this storefront application by using JavaScript and connecting the code to the pre-written code that was created by Udacity.
+## 🍒🍊🍓   Kirana's Fruit Stand   🍒🍊🍓
 
-Shopping carts are a fantastic tool to practice JavaScript fundamentals.
+✨✨ I created the core functionality used for this storefront application by using JavaScript and connecting the code to the pre-written code that was created by Udacity. ✨✨
+
+Shopping carts are a fantastic tool to practice JavaScript fundamentals. Below are the instructions and guidelines set for me to pass this project. Reading through this will give you a better understanding of the requirements and what I contributed. Thanks for taking the time and please remember this project is not mine. 🛑 Therefore, using any of the code and submitting it as your own is plagiarism.
+
 
 ## Getting Started
 
